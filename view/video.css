@@ -1,0 +1,72 @@
+.top{
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.top h2{
+    z-index: 3;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin-left: 50px;
+    font-size: xxx-large;
+}
+.top p{
+    z-index: 3;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    font-size: x-large;
+}
+
+.background-video {
+    position: absolute;
+    height: 90vh;
+    width: 99vw;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#first{
+    z-index: 2;
+}
+#second{
+    z-index: 1;
+}
+@media only screen and (max-width:900px){
+    .top{
+        height:50vh;
+        align-items: flex-end;
+    }
+
+    
+    .top h2{
+        font-family: 'Nixie One', cursive;
+        font-weight: bold;
+        position: relative;
+        margin-right: 50px;
+        font-size: xx-large;
+    }
+    .top p{
+        font-family: 'Megrim', cursive;
+        position: relative;
+        margin-bottom: 50px;
+        margin-right: 50px;
+        font-size: large;
+    }
+        
+    .background-video{
+        height: 50vh;
+    }
+    #first{
+        z-index: 1;
+    }
+    #second{
+        z-index: 2;
+    }
+}

@@ -1,0 +1,36 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    z-index: 3;
+    height: 10vh;
+    background: linear-gradient(#ffffff 65%, #ffffff00 80%) !important;
+}
+
+.navbar-nav{
+    font-family: 'Gruppo', sans-serif;
+
+}
+.navbar-brand{
+    font-family: 'Audiowide', cursive;
+}
+.bg-body-tertiary{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity));
+}
+
+@media only screen and (min-width:900px){
+    .container-fluid{
+        z-index: 3;
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+    }
+}
+@media only screen and (max-width:900px){
+    .container-fluid{
+        background-color: white;
+    }
+}

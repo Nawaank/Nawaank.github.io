@@ -1,0 +1,59 @@
+
+#voiture{
+    height: 36vh;
+    padding-top: 10vw;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+.propos{
+    font-family: 'Gruppo', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    clip-path: polygon(0 15%, 100% 0, 100% 90%, 0 80%);
+    height: 30vh;
+}
+.troisd{
+    width: 30vw;
+}
+.txt-propos{
+    background-color: black;
+    color: aliceblue;
+    width: 69vw;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+#gold{
+    color: aliceblue;
+    background-color: #000000 !important;
+}
+#clip{
+    clip-path: polygon(0 0, 100% 10%, 100% 80%, 0 80%);
+}
+
+
+@media only screen and (max-width:900px){
+    .txt-propos{
+        width: 100vw;
+        padding: 20px 20px;
+    }
+    #voiture{
+        clip-path: none;
+        height: auto;
+    }
+    .propos{
+        clip-path: none;
+    }
+    #clip{
+        clip-path: none;
+    }
+    .propos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .troisd{
+        width: 100vw;
+    }
+}

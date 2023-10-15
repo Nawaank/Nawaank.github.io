@@ -1,0 +1,95 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h2{
+    text-decoration: underline;
+    font-family: 'Audiowide', cursive;
+    margin-top: 30px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 50;
+    box-sizing: border-box;
+    width: 100%;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+.contact a{
+    text-decoration: none;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.774);
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 100px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition: all .3s ease-out;  
+  color: #fff;
+}
+.icon:hover{
+  width: 400px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icon:hover i{
+  color: #fff
+}
+.icon .fa-instagram{
+  color: rgb(153, 20, 135); 
+}
+.inst:hover{
+  background: rgb(153, 20, 135);
+}
+.icon .fa-tiktok{
+  color: rgb(0, 0, 0); 
+}
+.tiktok:hover{
+  background: rgb(0, 0, 0);
+}
+.icon .fa-youtube{
+  color: rgb(218, 32, 56); 
+}
+.ytb:hover{
+  background: rgb(218, 32, 56);
+}
+
+.fin{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Audiowide', cursive;
+}
+.fin p{
+    margin: 30px;
+}
+/* resposive */
+@media screen and (min-width: 768px) {
+  .contact{
+    flex-direction: row;
+  }  
+}
+
+@media screen and (min-width: 1200px){
+  .icon{
+    margin: 35px;
+  }
+}
+@media only screen and (max-width:900px){
+    .fin{
+        display: flex;
+        flex-direction: column;
+    }
+}
