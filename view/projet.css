@@ -23,7 +23,7 @@
     font-family: 'Nixie One', cursive;
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 99vw;
     height: 32vh;
 }
 .border{
